@@ -1,0 +1,1 @@
+from obj.questlog import Objective
