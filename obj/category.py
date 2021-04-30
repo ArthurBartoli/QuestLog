@@ -27,16 +27,15 @@ class Category():
     # Access Functions
     def change_title(self, title):
         self.title = title
-    
+
     def change_ql(self, ql_title, ql_desc):
         self.questlog = QuestLog(ql_title, desc=ql_desc)
-    
+
     def change_parent(self, new_parent):
         self.ql_parent.remove_category(self)
         self.ql_parent = new_parent
         self.ql_parent.add_category(self)
         self._pos_parent = self.ql_parent.search_log(self.title)
-    
+
     def correct_pos(self):
         self._pos_parent = self.ql_parent.search_log(self.title)
-        
