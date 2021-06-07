@@ -1,0 +1,1 @@
+Most of the tests and barebones are done so I will remake a TODO because I lost it before :/

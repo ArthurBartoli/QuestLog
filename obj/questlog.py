@@ -1,6 +1,6 @@
 '''This contains the definition of the quest_log class.'''
 
-from objective import Objective
+from .objective import Objective
 import regex as re
 
 class QuestLog():

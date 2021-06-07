@@ -10,15 +10,15 @@ def obj_test():
     import sys
     import os
     sys.path.extend([f'./{name}' for name in os.listdir(".") if os.path.isdir(name)])
-    from questlog import Objective
+    from obj.objective import Objective
 
     # Testing Object Initialisation
     print("============")
     print("Object initialisation..")
     walk = Objective("Take a walk !")
-    test = Objective("Fais des tests", q=1)
-    bana = Objective("Buy bananas", q=12)
-    toma = Objective("Buy tomatoes", q=5, desc="Just buy some tomatoes")
+    test = Objective("Fais des tests", qty=1)
+    bana = Objective("Buy bananas", qty=12)
+    toma = Objective("Buy tomatoes", qty=5, desc="Just buy some tomatoes")
     medi = Objective("Meditate this evening", desc="It can do you some good")
     print("Done !")
     print("===========\n")
@@ -68,9 +68,9 @@ def obj_test():
 
     if walk.desc == 'CHANGE_DESCRIPTION WORKS !' and toma.title == 'CHANGE_TITLE WORKS !':
         #print('title step')
-        if bana.q == 7 and toma.q == 6 and walk.q == 0:
+        if bana.qty == 7 and toma.qty == 6 and walk.qty == 0:
             #print('q step')
-            if medi._q_flag and not test._q_flag:
+            if medi._qty_flag and not test._qty_flag:
                 #print('qflag step')
                 if walk.is_done() and toma.is_done() and not medi.is_done() and test_read:
                     #print('check step')
@@ -83,6 +83,6 @@ def obj_test():
 
     if test_read and test_access:
         print('')
-        print('TEST COMPLETED !!')
-
-obj_test()
+        print('OBJECTIVE TEST COMPLETED !!')
+        return True
+    return False
