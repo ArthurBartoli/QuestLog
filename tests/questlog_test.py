@@ -11,7 +11,7 @@ def questlog_test():
     import os
     sys.path.extend([f'./{name}' for name in os.listdir(".") if os.path.isdir(name)])
 
-    from questlog import QuestLog
+    from obj.questlog import QuestLog
 
     temp = ["Banane", "Haricot", "Figue"]
 
@@ -118,6 +118,6 @@ def questlog_test():
     print("test utils is", test_utils)
     if test_read and test_access and test_utils:
         print("")
-        print("TEST COMPLETE !")
-
-questlog_test()
+        print("QUESTLOG TEST COMPLETE !")
+        return True
+    return False

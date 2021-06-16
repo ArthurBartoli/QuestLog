@@ -1,6 +1,6 @@
-from obj.questlog import Quest_log
+from obj.questlog import QuestLog
 
-liste = Quest_log('le kk')
+liste = QuestLog('le kk')
 
 liste.add_objective('Acheter des bananes')
 liste.add_objective('KK')

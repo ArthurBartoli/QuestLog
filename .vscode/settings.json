@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "C:\\anaconda\\python.exe"
+    "python.pythonPath": "/home/coolkat/anaconda3/bin/python",
+    "python.linting.pylintEnabled": true
 }
