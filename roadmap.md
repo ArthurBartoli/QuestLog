@@ -34,6 +34,13 @@
 ----------------------
 
 [] Graphical UI
+	* What framework ?
+		* Electron ? (Typescript + React)
+		    * https://www.electronjs.org/docs/tutorial/introduction
+		    * Is necessary to learn :
+		        * https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics
+		        * https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics
+		        * https://nodejs.dev/learn
 https://www.youtube.com/watch?v=jE-SpRI3K5g&t=165s
 
 [] MongoDB database
